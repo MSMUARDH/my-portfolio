@@ -1,5 +1,8 @@
 import React from "react";
 import img from "../assets/images/contact-img.svg";
+import { FaBeer } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaMobileButton } from "react-icons/fa6";
 
 function Contact() {
   return (
@@ -7,10 +10,10 @@ function Contact() {
       <div className="contact bg-[linear-gradient(90deg,#b004b0,#38097a);] w-full">
         <div className="wrapper flex justify-center  py-16 gap-52 lg:py-12">
           <div className="imgbox lg:hidden">
-            {/* <img className="w-[550px] h-full" src={img} alt="" /> */}
+            <img className="w-[450px] h-full" src={img} alt="" />
           </div>
           <div className="content-box">
-            <h1 className="text-white font-bold text-4xl">Contact Me</h1>
+            <h1 className="text-white font-bold text-3xl mb-5">Contact Me</h1>
             {/* <form action="" className="flex flex-col ">
               <div className="flex gap-4 py-2  ">
                 <input
@@ -46,8 +49,31 @@ function Contact() {
                 Send
               </button>
             </form> */}
-            <p>muazmohamed98@gmail.com</p>
-            <p>+94767200798</p>
+
+            <div className="flex mb-2">
+              <div
+                className="text-white font-bold text-xl "
+                style={{ paddingTop: "5px", marginRight: "10px" }}
+              >
+                <MdEmail />
+              </div>
+              <p className="text-white font-bold text-xl ">
+                muazmohamed98@gmail.com
+              </p>
+            </div>
+
+            <div className="flex">
+              <div
+                className="text-white font-bold "
+                style={{ paddingTop: "5px", marginRight: "10px" }}
+              >
+                <FaMobileButton />
+              </div>
+
+              <div>
+                <p className="text-white font-bold text-xl">+94767200798</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

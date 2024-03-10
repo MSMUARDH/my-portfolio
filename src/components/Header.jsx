@@ -21,7 +21,12 @@ function Header() {
                 Welcome to my Portfolio
               </button>
             </div>
-            <h1 className="text-white text-5xl font-bold">Hi! I'm Muaz</h1>
+            <h1 className="text-white text-5xl font-bold">
+              Hi! I'm Muaz, a
+              <div>
+                <span className="snippet">full-stack</span> developer
+              </div>
+            </h1>
             <p className="text-white py-4 max-w-lg ">
               Highly skilled & motivated Software Engineer with in-depth
               knowledge of JavaScript, NodeJS Framework, and development tools.

@@ -26,8 +26,13 @@ function Navbar() {
   return (
     <>
       <div className="navbarcon flex justify-between items-center px-20 py-6 bg-transparent z-40 text-white lg:px-6 fixed w-full">
-        <h1 className="text-4xl  font-bold "> {'<Muaz/>'} </h1>
-
+        <span className="text-4xl  font-bold ">
+          <span className="snippet">&lt;</span>
+          {"Muaz"}
+          <span className="snippet">/</span>
+          <span className="snippet">&gt;</span>
+        </span>
+        {/* <h1 className="text-4xl  font-bold "> {"Muaz"} </h1> */}
         <nav
           className={` flex justify-center items-center gap-x-10 ${
             durum && "lg:hidden"
@@ -50,31 +55,35 @@ function Navbar() {
               <i className="fa-brands fa-twitter border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
 
-{/* Instagram */}
-            <a href="https://www.instagram.com/muaz_mohamed_98/" target="_blank">
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/muaz_mohamed_98/"
+              target="_blank"
+            >
               <i className="fa-brands fa-instagram border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
 
             {/* Git */}
-            <a
-              href="https://github.com/MSMUARDH"
-              target="_blank"
-            >
+            <a href="https://github.com/MSMUARDH" target="_blank">
               <i className="fa-brands fa-github border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
 
-{/* //////////////////  Linked in*/}
-<a
+            {/* //////////////////  Linked in*/}
+            <a
               href="https://www.linkedin.com/in/mohamed-muaz-6781a31ba/"
               target="_blank"
             >
               <i className="fa-brands fa-linkedin border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
-
           </div>
           <div className="btn">
-            <button   className="border-[1px] border-white border-solid py-2 px-4 hover:bg-white hover:text-black font-bold">
-              <a  href="https://www.linkedin.com/in/mohamed-muaz-6781a31ba/" target="_blank">Let's Connect</a>
+            <button className="border-[1px] border-white border-solid py-2 px-4 hover:bg-white hover:text-black font-bold">
+              <a
+                href="https://www.linkedin.com/in/mohamed-muaz-6781a31ba/"
+                target="_blank"
+              >
+                Let's Connect
+              </a>
             </button>
           </div>
         </nav>
