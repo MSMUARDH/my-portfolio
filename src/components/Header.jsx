@@ -22,9 +22,9 @@ function Header() {
               </button>
             </div>
             <h1 className="text-white text-5xl font-bold">
-              Hi! I'm Muaz, a
+              Hi! I'm Muaz.
               <div>
-                <span className="snippet">full-stack</span> developer
+                <span className="snippet">Iam a full-stack</span> developer
               </div>
             </h1>
             <p className="text-white py-4 max-w-lg ">
