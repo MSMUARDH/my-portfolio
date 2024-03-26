@@ -51,9 +51,9 @@ function Navbar() {
           </ul>
 
           <div className="icon text-lg flex gap-4  lg:gap-8 lg:my-10">
-            <a href="https://twitter.com/reayhs" target="_blank">
+            {/* <a href="https://twitter.com/reayhs" target="_blank">
               <i className="fa-brands fa-twitter border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
-            </a>
+            </a> */}
 
             {/* Instagram */}
             <a

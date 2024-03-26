@@ -28,10 +28,11 @@ function Header() {
               </div>
             </h1>
             <p className="text-white py-4 max-w-lg ">
-              Highly skilled & motivated Software Engineer with in-depth
-              knowledge of JavaScript, NodeJS Framework, and development tools.
-              seeking opportunities where I can use my skills to the advantage
-              of the business while having the scope to develop my own career
+              Highly skilled and motivated Software Engineers possess an
+              in-depth knowledge of JavaScript, NodeJS Framework, web
+              development, and essential development. Join me to get top-notch
+              work quality through cutting-edge technologies, elegant designs,
+              and outstanding functionality.
             </p>
             <a href="https://www.linkedin.com/in/mohamed-muaz-6781a31ba/">
               <button className="  text-white text-2xl">

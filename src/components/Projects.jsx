@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LuDownload } from "react-icons/lu";
 import img1 from "../assets/images/HryFine.jpg";
 import img2 from "../assets/images/E-Ticketing.jpg";
 
@@ -32,7 +33,7 @@ function Projects() {
       description: "(Web Application)",
       img: img1,
       tech: "React,Node.js,Express.js,MongoDB,Bootstrap",
-      link: "https://chat.openai.com/c/30d10690-8240-4aba-857d-76068685e995",
+      link: "https://github.com/MSMUARDH/HryFine.git",
     },
     {
       id: 2,
@@ -48,7 +49,7 @@ function Projects() {
       description: "(Mobile Application)",
       img: img3,
       tech: "React Native,Node.js,Express.js,MongoDB,JWT,Android Studio",
-      link: "",
+      link: "https://github.com/MSMUARDH/CML.git",
     },
     {
       id: 4,
@@ -56,7 +57,7 @@ function Projects() {
       description: "(Web Application)",
       img: img4,
       tech: "ASP.NET Core,JavaScript,jQuery,Ajax,SQL,MVC",
-      link: "",
+      link: "https://github.com/MSMUARDH/Rythose-Aerospace.git",
     },
     {
       id: 5,
@@ -72,7 +73,7 @@ function Projects() {
       description: "Web Application",
       img: img6,
       tech: "HTML,CSS,JavaScript,Node.js,MongoDB",
-      link: "",
+      link: "https://github.com/MSMUARDH/ChatBot.git",
     },
     {
       id: 6,
@@ -80,7 +81,7 @@ function Projects() {
       description: "Web Application",
       img: img7,
       tech: "React,Node.js,Express.js,MongoDB,JWT,Flowbite",
-      link: "",
+      link: "https://github.com/MSMUARDH/Note-Manager.git",
     },
     {
       id: 7,
@@ -88,26 +89,8 @@ function Projects() {
       description: "Design & Development",
       img: img8,
       tech: "React,Node.js,Express.js,MongoDB,JWT,MUI",
-      link: "",
+      link: "https://github.com/MSMUARDH/Employee-Management.git",
     },
-    // {
-    //   id: 8,
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   img: img1,
-    // },
-    // {
-    //   id: 9,
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   img: img1,
-    // },
-    // {
-    //   id: 10,
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   img: img1,
-    // },
   ];
 
   return (
@@ -117,10 +100,9 @@ function Projects() {
         <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-[#939191]">
           {/* this is project summary line change below line  */}
           Here, you'll find a collection of my diverse and innovative projects.
-          Each project showcases my skills and expertise in web development. You
-          can explore the live demo of each project to experience its
-          functionalities firsthand. Additionally, you'll have access to the
-          source code on GitHub, allowing you to delve deeper into the project's
+          Each project showcases my skills and expertise in development. By
+          clicking on the project below, you'll have access to the source code
+          on GitHub, enabling you to delve deeper into the project's
           implementation details.
         </p>
         <div className="flex justify-center items-center gap-4 mt-12 mb-2 ">
@@ -132,7 +114,7 @@ function Projects() {
           >
             Projects
           </button>
-          <button
+          {/* <button
             onClick={() => setDurum(2)}
             className={`font-bold text-[19px] border-2  bg-[#171717] rounded-[6px] p-[4px] ${
               durum === 2 ? "bg-[linear-gradient(90deg,#b004b0,#38097a)]" : ""
@@ -147,13 +129,28 @@ function Projects() {
             }`}
           >
             Text-2
-          </button>
+          </button> */}
         </div>
         <div className="grid grid-cols-3 p-10 justify-center items-center gap-8 lg:grid-cols-2 tl:grid-cols-1  ">
           {durum === 1
             ? projects.map((item, i) => <ProjectCard key={i} item={item} />)
             : null}
         </div>
+
+        <div className="btn py-3 flex justify-center ">
+          <a
+            href="https://drive.google.com/file/d/1uNFFg8wN_Wx8mfYca_Pl331lwCOj2XRI/view?usp=drive_link"
+            target="_blank"
+          >
+            <button className="flex justify-center content-center text-2xl border-2   border-[#b0aaaa] font-bold text-white bg-[linear-gradient(180deg,#38097a,#b004b0)]  hover:bg-[linear-gradient(180deg,#38097a,#38097a)] py-4 px-5  rounded-2xl ">
+              <div className="py-1 pr-3">
+                <LuDownload />
+              </div>
+              Resume
+            </button>
+          </a>
+        </div>
+
         {durum === 2 ? (
           <div
             id="text2"

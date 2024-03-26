@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../styles.css";
 import { Navigation } from "swiper";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import img1 from "../assets/images/Skills/JS.png";
 import img2 from "../assets/images/Skills/.NET.png";
 import img3 from "../assets/images/Skills/Boostrap.png";
@@ -25,15 +25,11 @@ import img16 from "../assets/images/Skills/Postman.png";
 import img17 from "../assets/images/Skills/TS.png";
 import img18 from "../assets/images/Skills/Redux.png";
 
-
-
-
-
-import bg from "../assets/images/banner-bg.png"
+import bg from "../assets/images/banner-bg.png";
 
 function Skills() {
-// new code below
-const [slidesPerView, setSlidesPerView] = useState(4);
+  // new code below
+  const [slidesPerView, setSlidesPerView] = useState(4);
 
   useEffect(() => {
     const handleResize = () => {
@@ -49,37 +45,44 @@ const [slidesPerView, setSlidesPerView] = useState(4);
     handleResize();
 
     // Event listener for window resize
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-
-//
-
+  //
 
   return (
     <>
-      <div id="skills" style={{backgroundImage: `url(${bg})`}} className="wrapper h-full bg-no-repeat bg-center bg-cover p-16 lg:p-4">
+      <div
+        id="skills"
+        style={{ backgroundImage: `url(${bg})` }}
+        className="wrapper h-full bg-no-repeat bg-center bg-cover p-16 lg:p-4"
+      >
         <div className="skills-wrapper text-center text-white bg-[#171717]  p-10 rounded-[50px] lg:p-2">
           <h1 className="text-4xl ">Skills</h1>
           <p className="text-lg py-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Proficient in designing responsive and user-centric interfaces for
+            effective experiences.
           </p>
           <div className="box flex  justify-between  items-center bg-[#171717] my-6">
-
             <Swiper
-            style={{ cursor: "grab"}}
+              autoplay={{
+                delay: 1300,
+                disableOnInteraction: false,
+              }}
+              // allowTouchMove
+              style={{ cursor: "grab" }}
               slidesPerView={slidesPerView}
               spaceBetween={40}
               pagination={{
                 clickable: true,
               }}
               navigation={true}
-              modules={[Navigation, Pagination]}
+              modules={[Autoplay, Navigation, Pagination]}
               className="mySwiper "
             >
               <SwiperSlide className="bg-[#171717]">
@@ -99,13 +102,12 @@ const [slidesPerView, setSlidesPerView] = useState(4);
               </SwiperSlide>
 
               <SwiperSlide className=" bg-[#171717]">
-                {" "} 
+                {" "}
                 <div className=" bg-[#171717]">
                   <img src={img7} alt="" />
                   <h1 className="font-bold text-2xl my-2">Next.js</h1>
                 </div>
               </SwiperSlide>
-
 
               <SwiperSlide className="bg-[#171717]">
                 {" "}
@@ -114,7 +116,6 @@ const [slidesPerView, setSlidesPerView] = useState(4);
                   <h1 className="font-bold text-2xl my-2">Node.js</h1>
                 </div>
               </SwiperSlide>
-
 
               <SwiperSlide className="bg-[#171717]">
                 {" "}
@@ -131,7 +132,6 @@ const [slidesPerView, setSlidesPerView] = useState(4);
                   <h1 className="font-bold text-2xl my-2">Redux</h1>
                 </div>
               </SwiperSlide>
-
 
               <SwiperSlide className=" bg-[#171717]">
                 {" "}
@@ -197,7 +197,6 @@ const [slidesPerView, setSlidesPerView] = useState(4);
                 </div>
               </SwiperSlide>
 
-
               <SwiperSlide className=" bg-[#171717]">
                 {" "}
                 <div className=" bg-[#171717]">
@@ -206,7 +205,6 @@ const [slidesPerView, setSlidesPerView] = useState(4);
                 </div>
               </SwiperSlide>
 
-              
               <SwiperSlide className=" bg-[#171717]">
                 {" "}
                 <div className=" bg-[#171717]">
@@ -223,8 +221,6 @@ const [slidesPerView, setSlidesPerView] = useState(4);
                 </div>
               </SwiperSlide>
 
-
-
               <SwiperSlide className=" bg-[#171717]">
                 {" "}
                 <div className=" bg-[#171717]">
@@ -232,7 +228,6 @@ const [slidesPerView, setSlidesPerView] = useState(4);
                   <h1 className="font-bold text-2xl my-2">Postman</h1>
                 </div>
               </SwiperSlide>
-
             </Swiper>
           </div>
         </div>
